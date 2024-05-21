@@ -159,7 +159,7 @@ function ProductOffer({ product, i18n, adding, handleAddToCart, showError }) {
   return (
     <BlockStack spacing="loose">
       <Divider />
-      <Heading level={2}>You might like</Heading>
+      <Heading level={2}>You might like:</Heading>
       <BlockStack spacing="loose">
         <InlineLayout
           spacing="base"
