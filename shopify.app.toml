@@ -1,3 +1,29 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-scopes = "write_products"
+client_id = "249449ef05d834389de92e8219ea9db8"
+name = "checkout-upsell"
+handle = "checkout-upsell-148"
+application_url = "https://folders-upgrade-ri-limousines.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "dawn-customized-sandbox.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://folders-upgrade-ri-limousines.trycloudflare.com/auth/callback",
+  "https://folders-upgrade-ri-limousines.trycloudflare.com/auth/shopify/callback",
+  "https://folders-upgrade-ri-limousines.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
